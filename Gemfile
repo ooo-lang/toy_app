@@ -46,6 +46,8 @@ gem "bootsnap", require: false
 
 gem 'minitest'
 gem 'minitest-reporters'
+gem 'bootstrap-sass', '3.3.7'
+gem 'sassc-rails', '>= 2.1.0'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -67,4 +69,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "rails-controller-testing"
+  gem "minitest"
+  gem "minitest-reporters"
+  gem "guard"
+  gem "guard-minitest"
 end
